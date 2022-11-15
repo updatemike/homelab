@@ -10,7 +10,86 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="content">
+            <a class="centered" href=""><img src="./images/sunglass-doge-500.png" alt="updateMike"></a>
+            <ul>
+                <li>
+                    <p>Homelab</p>
+                </li>
+            </ul>
+            <div class="empty"></div>
+        </div>
 
+    </nav>
+    <header class="servers">
+        <div class="content centered">
+            <div class="card">
+                <ul>
+                    <li class="li-img"><img src="./images/PI-transparent.png" alt="PI"></li>
+                    <li>
+                        <p>Raspberry Pi 1</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <ul>
+                    <li class="li-img"><img src="./images/PI-transparent.png" alt="PI"></li>
+                    <li>
+                        <p>Raspberry Pi 2</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card odroid">
+                <ul>
+                    <li class="li-img"><img src="./images/odroid-hc2-transparent.png" alt="PI"></li>
+                    <li>
+                        <p>Odroid 1</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <section class="server-info">
+        <div class="content">
+            <div class="info">
+                <h1>Name: Pi 2</h1>
+                <h2>IP: 203</h2>
+                <h2>OS: DietPi</h2>
+                <ul>
+                    <li>
+                        <h3>Services:</h3>
+                    </li>
+                    <ul class="service-items">
+                        <ul>
+                            <li>
+                                <h4>Pi-Hole</h4>
+                            </li>
+                            <li>
+                                <p>Connect:</p> http://SERVER-IP/admin/
+                            </li>
+                            <li>
+                                <p>Update:</p> pihole -up
+                            </li>
+                            <li>
+                                <p>Changing password:</p> pihole -a -p
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h4>Unbound</h4>
+                            </li>
+
+                            <li>
+                                <p>Update:</p> sudo apt update && sudo apt upgrade
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

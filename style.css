@@ -1,0 +1,150 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@500&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #a1c3ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3474e6;
+    color: whitesmoke;
+}
+
+.navbar .content {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px;
+}
+
+
+.navbar img {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 40px;
+
+}
+
+.navbar ul p {
+    font-size: 30px;
+}
+
+/* Servers header */
+
+.servers {
+    background-color: #a1c3ff;
+}
+
+.servers .content {
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 40px;
+    padding: 50px 0;
+
+}
+
+.servers .card {
+
+    background-color: #0151cc;
+    padding: 16px;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card ul {
+    text-align: center;
+}
+
+.card img {
+    height: auto;
+    width: 100px;
+}
+
+.card li.li-img {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servers p {
+    color: whitesmoke;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* Server information section */
+
+.server-info {
+    background-color: #0151cc;
+    color: whitesmoke;
+}
+
+.server-info .content {
+    padding: 30px;
+}
+
+
+
+.server-info h3 {
+    margin-top: 1em;
+}
+
+.server-info h4 {
+    line-height: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.server-info li {
+    margin-bottom: 1em;
+}
+
+.server-info .service-items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 100px;
+    text-align: left;
+}

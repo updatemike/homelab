@@ -2,15 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@500&display=swap');
 
 /* Global styles */
+:root {
+    --doge-gold: #E3C26F;
+    --doge-black: #191919;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: whitesmoke;
 }
 
 body {
-    background-color: #a1c3ff;
+    background-color: var(--doge-gold);
 }
 
 a {
@@ -34,8 +40,7 @@ ul {
 
 /* Navbar */
 .navbar {
-    background-color: #3474e6;
-    color: whitesmoke;
+    background-color: var(--doge-black);
 }
 
 .navbar .content {
@@ -68,10 +73,6 @@ ul {
 
 /* Servers header */
 
-.servers {
-    background-color: #a1c3ff;
-}
-
 .servers .content {
     flex-wrap: wrap;
     height: 100%;
@@ -82,7 +83,7 @@ ul {
 
 .servers .card {
 
-    background-color: #0151cc;
+    background-color: var(--doge-black);
     padding: 16px;
     border-radius: 20px;
     height: 200px;
@@ -116,16 +117,24 @@ ul {
 
 /* Server information section */
 
-.server-info {
-    background-color: #0151cc;
-    color: whitesmoke;
-}
-
 .server-info .content {
+    background-color: var(--doge-black);
+    border-radius: 25px;
     padding: 30px;
+    position: relative;
 }
 
+.server-info .content .info-pi1 {
+    display: none;
+}
 
+.server-info .content .info-pi2 {
+    display: none;
+}
+
+.server-info .content .info-odroid1 {
+    display: none;
+}
 
 .server-info h3 {
     margin-top: 1em;

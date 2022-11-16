@@ -11,12 +11,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    color: whitesmoke;
 }
 
-body {
+html,
+body,
+button {
     background-color: var(--doge-gold);
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
 }
 
 a {
@@ -78,11 +80,10 @@ ul {
     height: 100%;
     gap: 40px;
     padding: 50px 0;
-
 }
 
-.servers .card {
-
+.servers button {
+    cursor: pointer;
     background-color: var(--doge-black);
     padding: 16px;
     border-radius: 20px;
@@ -91,25 +92,32 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border: none;
 }
 
-.card ul {
+.servers button:hover {
+    background-color: grey;
+}
+
+.servers button ul {
     text-align: center;
 }
 
-.card img {
+.servers button img {
     height: auto;
     width: 100px;
 }
 
-.card li.li-img {
+.servers button li.li-img {
     min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.servers p {
+.servers button p {
     color: whitesmoke;
     margin-top: 8px;
     text-align: center;

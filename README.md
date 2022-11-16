@@ -2,4 +2,4 @@
 <p align="center">
     <b>Repository for my homelab.</b>
     <br><br>
-    •  <a href=# target="_blank" rel="noopener">Website</a> • 
+    •  <a href="https://updatemike.github.io/homelab/" target="_blank" rel="noopener">Website</a> • 

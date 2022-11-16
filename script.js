@@ -9,20 +9,31 @@ const odroid1Info = document.querySelector(".info-odroid1");
 
 pi1Btn.addEventListener('click', () => {
     pi1Info.style.display = "block";
+    document.getElementById("pi1-btn").classList.add("btn-selected");
     pi2Info.style.display = "none";
+    document.getElementById("pi2-btn").classList.remove("btn-selected");
     odroid1Info.style.display = "none";
+    document.getElementById("odroid1-btn").classList.remove("btn-selected");
 })
 
 pi2Btn.addEventListener('click', () => {
     pi2Info.style.display = "block";
+    document.getElementById("pi1-btn").classList.remove("btn-selected");
     pi1Info.style.display = "none";
+    document.getElementById("pi2-btn").classList.add("btn-selected");
     odroid1Info.style.display = "none";
+    document.getElementById("odroid1-btn").classList.remove("btn-selected");
 })
 
 odroid1Btn.addEventListener('click', () => {
     pi1Info.style.display = "none";
+    document.getElementById("pi1-btn").classList.remove("btn-selected");
     pi2Info.style.display = "none";
+    document.getElementById("pi2-btn").classList.remove("btn-selected");
     odroid1Info.style.display = "block";
+    document.getElementById("odroid1-btn").classList.add("btn-selected");
 })
+
+/* Change button layout */
 
 

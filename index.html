@@ -25,7 +25,7 @@
     </nav>
     <header class="servers">
         <div class="content centered">
-            <button id="pi1-btn" class="server-btn">
+            <button id="pi1-btn" class="server-btn" onclick="pi1Click()">
                 <ul>
                     <li class="li-img"><img src="./images/PI-transparent.png" alt="PI"></li>
                     <li>
@@ -33,7 +33,7 @@
                     </li>
                 </ul>
             </button>
-            <button id="pi2-btn" class="server-btn">
+            <button id="pi2-btn" class="server-btn" onclick="pi2Click()">
                 <ul>
                     <li class="li-img"><img src="./images/PI-transparent.png" alt="PI"></li>
                     <li>
@@ -41,7 +41,7 @@
                     </li>
                 </ul>
             </button>
-            <button id="odroid1-btn" class="server-btn">
+            <button id="odroid1-btn" class="server-btn" onclick="odroid1Click()">
                 <ul>
                     <li class="li-img"><img src="./images/odroid-hc2-transparent.png" alt="PI"></li>
                     <li>
@@ -76,7 +76,7 @@
                                 <p>Update:</p> dietpi-software reinstall 204
                             </li>
                             <li>
-                                <p>Music path: </p> /mnt/dietpi_userdata/Music
+                                <p>Music path:</p> /mnt/dietpi_userdata/Music
                             </li>
                         </ul>
                         <ul>
@@ -91,10 +91,6 @@
                             <li>
                                 <h4>Omada Controller</h4>
                             </li>
-                            <!-- 
-                            <li>
-                                <p>Update:</p> sudo apt update && sudo apt upgrade
-                            </li> -->
                         </ul>
                     </ul>
                 </ul>
@@ -167,7 +163,6 @@
             </div>
         </div>
     </section>
-
 </body>
 
 </html>

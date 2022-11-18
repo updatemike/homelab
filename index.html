@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Homelab</title>
     <link rel="icon" href="./images/sunglass-doge-500.png" type="image/icon type">
 </head>
@@ -24,7 +25,7 @@
     </nav>
     <header class="servers">
         <div class="content centered">
-            <button id="pi1-btn">
+            <button id="pi1-btn" class="server-btn">
                 <ul>
                     <li class="li-img"><img src="./images/PI-transparent.png" alt="PI"></li>
                     <li>
@@ -32,7 +33,7 @@
                     </li>
                 </ul>
             </button>
-            <button id="pi2-btn">
+            <button id="pi2-btn" class="server-btn">
                 <ul>
                     <li class="li-img"><img src="./images/PI-transparent.png" alt="PI"></li>
                     <li>
@@ -40,7 +41,7 @@
                     </li>
                 </ul>
             </button>
-            <button id="odroid1-btn">
+            <button id="odroid1-btn" class="server-btn">
                 <ul>
                     <li class="li-img"><img src="./images/odroid-hc2-transparent.png" alt="PI"></li>
                     <li>
@@ -52,10 +53,10 @@
     </header>
     <section class="server-info">
         <div class="content">
-            <div class="info-default">
+            <div id="info-default" class="info-box">
                 <p>Please select one of the servers above.</p>
             </div>
-            <div class="info-pi1">
+            <div id="info-pi1" class="hidden info-box">
                 <h1>Name: Pi 1</h1>
                 <h2>IP: 201</h2>
                 <h2>OS: DietPi</h2>
@@ -98,7 +99,7 @@
                     </ul>
                 </ul>
             </div>
-            <div class="info-pi2">
+            <div id="info-pi2" class="hidden info-box">
                 <h1>Name: Pi 2</h1>
                 <h2>IP: 203</h2>
                 <h2>OS: DietPi</h2>
@@ -133,7 +134,7 @@
                     </ul>
                 </ul>
             </div>
-            <div class="info-odroid1">
+            <div id="info-odroid1" class="hidden info-box">
                 <h1>Name: Odroid 1</h1>
                 <h2>IP: 202</h2>
                 <h2>OS: DietPi</h2>
@@ -166,7 +167,7 @@
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -135,27 +135,31 @@ ul {
     border-radius: 25px;
 }
 
-.server-info .content .info-default {
+.server-info .content .info-box {
+    height: auto;
+    display: block;
+    padding: 30px;
+
+}
+
+.server-info .content #info-default {
     font-size: 18px;
     font-weight: 600;
     padding: 16px;
     text-align: center;
 }
 
-.server-info .content .info-pi1 {
-    padding: 30px;
+.server-info .content .hidden {
     display: none;
+
 }
 
-.server-info .content .info-pi2 {
+/* .server-info .content .showing {
+    height: auto;
+    opacity: 1;
     padding: 30px;
-    display: none;
-}
-
-.server-info .content .info-odroid1 {
-    padding: 30px;
-    display: none;
-}
+    transition: opacity 200ms ease-in;
+} */
 
 .server-info h3 {
     margin-top: 1rem;

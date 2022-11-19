@@ -133,6 +133,7 @@ ul {
 .server-info .content {
     background-color: var(--doge-black);
     border-radius: 25px;
+    margin-bottom: 400px;
 }
 
 .server-info .content .info-box {
@@ -154,20 +155,13 @@ ul {
 
 }
 
-/* .server-info .content .showing {
-    height: auto;
-    opacity: 1;
-    padding: 30px;
-    transition: opacity 200ms ease-in;
-} */
-
 .server-info h3 {
-    margin-top: 1rem;
+    margin-top: 5vmin;
+    margin-bottom: 3vmin;
 }
 
 .server-info h4 {
     line-height: 0.5rem;
-    margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -179,6 +173,8 @@ ul {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 100px;
+    column-gap: 15vmin;
+    row-gap: 5vmin;
     text-align: left;
+
 }

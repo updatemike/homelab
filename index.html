@@ -51,7 +51,7 @@
             </button>
         </div>
     </header>
-    <section class="server-info">
+    <section id="serverInfo" class="server-info">
         <div class="content">
             <div id="info-default" class="info-box">
                 <p>Please select one of the servers above.</p>
@@ -60,40 +60,37 @@
                 <h1>Name: Pi 1</h1>
                 <h2>IP: 201</h2>
                 <h2>OS: DietPi</h2>
-                <ul>
-                    <li>
-                        <h3>Services:</h3>
-                    </li>
-                    <ul class="service-items">
-                        <ul>
-                            <li>
-                                <h4>Navidrome</h4>
-                            </li>
-                            <li>
-                                <p>Connect:</p> http://&lt;SERVER-IP&gt;:4533
-                            </li>
-                            <li>
-                                <p>Update:</p> dietpi-software reinstall 204
-                            </li>
-                            <li>
-                                <p>Music path:</p> /mnt/dietpi_userdata/Music
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h4>FreshRSS</h4>
-                            </li>
-                            <li>
-                                <p>Connect:</p> http://&lt;SERVER-IP&gt;/freshrss
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h4>Omada Controller</h4>
-                            </li>
-                        </ul>
+                <h3>Services:</h3>
+                <div class="service-items">
+                    <ul>
+                        <li>
+                            <h4>Navidrome</h4>
+                        </li>
+                        <li>
+                            <p>Connect:</p> http://&lt;SERVER-IP&gt;:4533
+                        </li>
+                        <li>
+                            <p>Update:</p> dietpi-software reinstall 204
+                        </li>
+                        <li>
+                            <p>Music path:</p> /mnt/dietpi_userdata/Music
+                        </li>
                     </ul>
-                </ul>
+                    <ul>
+                        <li>
+                            <h4>FreshRSS</h4>
+                        </li>
+                        <li>
+                            <p>Connect:</p> http://&lt;SERVER-IP&gt;/freshrss
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Omada Controller</h4>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
             <div id="info-pi2" class="hidden info-box">
                 <h1>Name: Pi 2</h1>

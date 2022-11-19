@@ -1,7 +1,10 @@
-/* Show/hide server info and Change button styling when selected */
+//Show/hide server info and Change button styling when selected
+//Change focus to info when you select a server
+//Return info to default and change focus to server selection
 
 const infoBox = document.querySelectorAll(".info-box");
 const serverBtn = document.querySelectorAll(".server-btn")
+const serverInfo = document.getElementById("serverInfo");
 
 function pi1Click() {
     infoBox.forEach(box => { box.classList.add("hidden") });
@@ -9,6 +12,8 @@ function pi1Click() {
 
     serverBtn.forEach(btn => { btn.classList.remove("btn-selected") });
     document.getElementById("pi1-btn").classList.add("btn-selected");
+
+    serverInfo.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function pi2Click() {
@@ -17,6 +22,8 @@ function pi2Click() {
 
     serverBtn.forEach(btn => { btn.classList.remove("btn-selected") })
     document.getElementById("pi2-btn").classList.add("btn-selected");
+
+    serverInfo.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function odroid1Click() {
@@ -25,9 +32,10 @@ function odroid1Click() {
 
     serverBtn.forEach(btn => { btn.classList.remove("btn-selected") })
     document.getElementById("odroid1-btn").classList.add("btn-selected");
+
+    serverInfo.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-
-/*  */
+//FIX SCROLL CANCELING scrollintoview
 
 

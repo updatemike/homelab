@@ -96,67 +96,65 @@
                 <h1>Name: Pi 2</h1>
                 <h2>IP: 203</h2>
                 <h2>OS: DietPi</h2>
-                <ul>
-                    <li>
-                        <h3>Services:</h3>
-                    </li>
-                    <ul class="service-items">
-                        <ul>
-                            <li>
-                                <h4>Pi-Hole</h4>
-                            </li>
-                            <li>
-                                <p>Connect:</p> http://&lt;SERVER-IP&gt;/admin/
-                            </li>
-                            <li>
-                                <p>Update:</p> pihole -up
-                            </li>
-                            <li>
-                                <p>Changing password:</p> pihole -a -p
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h4>Unbound</h4>
-                            </li>
 
-                            <li>
-                                <p>Update:</p> sudo apt update && sudo apt upgrade
-                            </li>
-                        </ul>
+                <h3>Services:</h3>
+
+                <div class="service-items">
+                    <ul>
+                        <li>
+                            <h4>Pi-Hole</h4>
+                        </li>
+                        <li>
+                            <p>Connect:</p> http://&lt;SERVER-IP&gt;/admin/
+                        </li>
+                        <li>
+                            <p>Update:</p> pihole -up
+                        </li>
+                        <li>
+                            <p>Changing password:</p> pihole -a -p
+                        </li>
                     </ul>
-                </ul>
+                    <ul>
+                        <li>
+                            <h4>Unbound</h4>
+                        </li>
+
+                        <li>
+                            <p>Update:</p> sudo apt update && sudo apt upgrade
+                        </li>
+                    </ul>
+                </div>
+
             </div>
             <div id="info-odroid1" class="hidden info-box">
                 <h1>Name: Odroid 1</h1>
                 <h2>IP: 202</h2>
                 <h2>OS: DietPi</h2>
-                <ul>
-                    <li>
-                        <h3>Services:</h3>
-                    </li>
-                    <ul class="service-items">
-                        <ul>
-                            <li>
-                                <h4>qBittorrent</h4>
-                            </li>
-                            <li>
-                                <p>Connect:</p> http://&lt;SERVER-IP&gt;:1340
-                            </li>
-                            <li>
-                                <p>Downloads path:</p> /mnt/dietpi_userdata/downloads
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h4>Dietpi VPN</h4>
-                            </li>
-                            <li>
-                                <p>Command:</p> dietpi-vpn
-                            </li>
-                        </ul>
+
+                <h3>Services:</h3>
+
+                <div class="service-items">
+                    <ul>
+                        <li>
+                            <h4>qBittorrent</h4>
+                        </li>
+                        <li>
+                            <p>Connect:</p> http://&lt;SERVER-IP&gt;:1340
+                        </li>
+                        <li>
+                            <p>Downloads path:</p> /mnt/dietpi_userdata/downloads
+                        </li>
                     </ul>
-                </ul>
+                    <ul>
+                        <li>
+                            <h4>Dietpi VPN</h4>
+                        </li>
+                        <li>
+                            <p>Command:</p> dietpi-vpn
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </section>

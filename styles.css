@@ -78,8 +78,8 @@ ul {
 .servers .content {
     flex-wrap: wrap;
     height: 100%;
-    gap: 40px;
-    padding: 50px 0;
+    gap: 5vmin;
+    padding: 5vmin 0;
 }
 
 .servers button {
@@ -165,16 +165,22 @@ ul {
     margin-bottom: 0.5rem;
 }
 
-.server-info li {
-    margin-bottom: 1rem;
+.server-info ul {
+    border: var(--doge-gold) dotted 2px;
+    border-radius: 5px;
+    padding: 1vmin;
 }
 
 .server-info .service-items {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    column-gap: 15vmin;
+    column-gap: 5vmin;
     row-gap: 5vmin;
     text-align: left;
 
+}
+
+.server-info .service-items p {
+    margin-top: 2vmin;
 }

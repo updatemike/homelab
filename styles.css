@@ -1,186 +1,186 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* Global styles */
 :root {
-    --doge-gold: #E3C26F;
-    --doge-black: #191919;
+  --doge-gold: #e3c26f;
+  --doge-black: #191919;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body,
 button {
-    background-color: var(--doge-gold);
-    font-family: "Poppins", sans-serif;
-    color: whitesmoke;
+  background-color: var(--doge-gold);
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .content {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 900px;
+  margin: 0 2vmin;
+  flex: 1 1 auto;
 }
 
 .centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  place-content: center;
 }
 
 /* Navbar */
 .navbar {
-    background-color: var(--doge-black);
+  background-color: var(--doge-black);
+  display: flex;
+  justify-content: center;
 }
 
 .navbar .content {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 12px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
 }
 
-
 .navbar img {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 .navbar ul {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 40px;
-
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 40px;
 }
 
 .navbar ul p {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 /* Servers header */
 
 .servers .content {
-    flex-wrap: wrap;
-    height: 100%;
-    gap: 5vmin;
-    padding: 5vmin 0;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 5vmin;
+  padding: 5vmin 0;
 }
 
 .servers button {
-    cursor: pointer;
-    background-color: var(--doge-black);
-    padding: 16px;
-    border-radius: 20px;
-    height: 200px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 1rem;
-    border: none;
+  cursor: pointer;
+  background-color: var(--doge-black);
+  padding: 16px;
+  border-radius: 20px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border: none;
 }
 
 .servers .content .btn-selected {
-    background-color: var(--doge-gold);
-    border: 5px solid var(--doge-black);
-    color: var(--doge-black);
+  background-color: var(--doge-gold);
+  border: 5px solid var(--doge-black);
+  color: var(--doge-black);
 }
 
 .servers button:hover {
-    background-color: #3d3d3d;
+  background-color: #3d3d3d;
 }
 
 .servers button ul {
-    text-align: center;
+  text-align: center;
 }
 
 .servers button img {
-    height: auto;
-    width: 100px;
+  height: auto;
+  width: 100px;
 }
 
 .servers button li.li-img {
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .servers button p {
-    margin-top: 8px;
-    text-align: center;
+  margin-top: 8px;
+  text-align: center;
 }
 
 /* Server information section */
 
 .server-info .content {
-    background-color: var(--doge-black);
-    border-radius: 25px;
-    margin-bottom: 400px;
+  background-color: var(--doge-black);
+  border-radius: 25px;
+  margin-bottom: 400px;
 }
 
 .server-info .content .info-box {
-    height: auto;
-    display: block;
-    padding: 30px;
-
+  height: auto;
+  display: block;
+  padding: 30px;
 }
 
 .server-info .content #info-default {
-    font-size: 18px;
-    font-weight: 600;
-    padding: 16px;
-    text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px;
+  text-align: center;
 }
 
 .server-info .content .hidden {
-    display: none;
-
+  display: none;
 }
 
 .server-info h3 {
-    margin-top: 5vmin;
-    margin-bottom: 3vmin;
+  margin-top: 5vmin;
+  margin-bottom: 3vmin;
 }
 
 .server-info h4 {
-    line-height: 0.5rem;
-    margin-bottom: 0.5rem;
+  line-height: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .server-info ul {
-    border: var(--doge-gold) dotted 2px;
-    border-radius: 5px;
-    padding: 1vmin;
+  border: var(--doge-gold) dotted 2px;
+  border-radius: 5px;
+  padding: 1vmin;
 }
 
 .server-info .service-items {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    column-gap: 5vmin;
-    row-gap: 5vmin;
-    text-align: left;
-
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 5vmin;
+  row-gap: 5vmin;
+  text-align: left;
 }
 
 .server-info .service-items p {
-    margin-top: 2vmin;
+  margin-top: 2vmin;
 }
+
+/* CHANGE NAV AT UNDER 500px WIDTH */

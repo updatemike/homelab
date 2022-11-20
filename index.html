@@ -2,162 +2,182 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Homelab</title>
-    <link rel="icon" href="./images/sunglass-doge-500.png" type="image/icon type">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <title>Homelab</title>
+  <link rel="icon" href="./images/sunglass-doge-500.png" type="image/icon type" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="content">
-            <a class="centered" href="#"><img src="./images/sunglass-doge-500.png" alt="updateMike"></a>
-            <ul>
-                <li>
-                    <p>Homelab</p>
-                </li>
-            </ul>
-            <div class="empty"></div>
+  <nav class="navbar">
+    <div class="content">
+      <a class="centered" href="#"><img src="./images/sunglass-doge-500.png" alt="updateMike" /></a>
+      <ul>
+        <li>
+          <p>Homelab</p>
+        </li>
+      </ul>
+      <div class="empty"></div>
+    </div>
+  </nav>
+
+  <header class="servers centered">
+    <div class="content centered">
+      <a href="#serverInfo"><button id="pi1-btn" class="server-btn" onclick="pi1Click()">
+          <ul>
+            <li class="li-img">
+              <img src="./images/PI-transparent.png" alt="PI" />
+            </li>
+            <li>
+              <p>Raspberry Pi 1</p>
+            </li>
+          </ul>
+        </button>
+      </a>
+
+      <a href="#serverInfo"><button id="pi2-btn" class="server-btn" onclick="pi2Click()">
+          <ul>
+            <li class="li-img">
+              <img src="./images/PI-transparent.png" alt="PI" />
+            </li>
+            <li>
+              <p>Raspberry Pi 2</p>
+            </li>
+          </ul>
+        </button>
+      </a>
+
+      <a href="#serverInfo"><button id="odroid1-btn" class="server-btn" onclick="odroid1Click()">
+          <ul>
+            <li class="li-img">
+              <img src="./images/odroid-hc2-transparent.png" alt="PI" />
+            </li>
+            <li>
+              <p>Odroid 1</p>
+            </li>
+          </ul>
+        </button>
+      </a>
+    </div>
+  </header>
+
+  <section id="serverInfo" class="server-info centered">
+    <div class="content">
+      <div id="info-default" class="info-box">
+        <p>Please select one of the servers above.</p>
+      </div>
+      <div id="info-pi1" class="hidden info-box">
+        <h1>Name: Pi 1</h1>
+        <h2>IP: 201</h2>
+        <h2>OS: DietPi</h2>
+
+        <h3>Services:</h3>
+        <div class="service-items">
+          <ul>
+            <li>
+              <h4>Navidrome</h4>
+            </li>
+            <li>
+              <p>Connect:</p>
+              http://&lt;SERVER-IP&gt;:4533
+            </li>
+            <li>
+              <p>Update:</p>
+              dietpi-software reinstall 204
+            </li>
+            <li>
+              <p>Music path:</p>
+              /mnt/dietpi_userdata/Music
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h4>FreshRSS</h4>
+            </li>
+            <li>
+              <p>Connect:</p>
+              http://&lt;SERVER-IP&gt;/freshrss
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h4>Omada Controller</h4>
+            </li>
+          </ul>
         </div>
-    </nav>
-    <header class="servers">
-        <div class="content centered">
-            <button id="pi1-btn" class="server-btn" onclick="pi1Click()">
-                <ul>
-                    <li class="li-img"><img src="./images/PI-transparent.png" alt="PI"></li>
-                    <li>
-                        <p>Raspberry Pi 1</p>
-                    </li>
-                </ul>
-            </button>
-            <button id="pi2-btn" class="server-btn" onclick="pi2Click()">
-                <ul>
-                    <li class="li-img"><img src="./images/PI-transparent.png" alt="PI"></li>
-                    <li>
-                        <p>Raspberry Pi 2</p>
-                    </li>
-                </ul>
-            </button>
-            <button id="odroid1-btn" class="server-btn" onclick="odroid1Click()">
-                <ul>
-                    <li class="li-img"><img src="./images/odroid-hc2-transparent.png" alt="PI"></li>
-                    <li>
-                        <p>Odroid 1</p>
-                    </li>
-                </ul>
-            </button>
+      </div>
+      <div id="info-pi2" class="hidden info-box">
+        <h1>Name: Pi 2</h1>
+        <h2>IP: 203</h2>
+        <h2>OS: DietPi</h2>
+
+        <h3>Services:</h3>
+        <div class="service-items">
+          <ul>
+            <li>
+              <h4>Pi-Hole</h4>
+            </li>
+            <li>
+              <p>Connect:</p>
+              http://&lt;SERVER-IP&gt;/admin/
+            </li>
+            <li>
+              <p>Update:</p>
+              pihole -up
+            </li>
+            <li>
+              <p>Changing password:</p>
+              pihole -a -p
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h4>Unbound</h4>
+            </li>
+
+            <li>
+              <p>Update:</p>
+              sudo apt update && sudo apt upgrade
+            </li>
+          </ul>
         </div>
-    </header>
-    <section id="serverInfo" class="server-info">
-        <div class="content">
-            <div id="info-default" class="info-box">
-                <p>Please select one of the servers above.</p>
-            </div>
-            <div id="info-pi1" class="hidden info-box">
-                <h1>Name: Pi 1</h1>
-                <h2>IP: 201</h2>
-                <h2>OS: DietPi</h2>
-                <h3>Services:</h3>
-                <div class="service-items">
-                    <ul>
-                        <li>
-                            <h4>Navidrome</h4>
-                        </li>
-                        <li>
-                            <p>Connect:</p> http://&lt;SERVER-IP&gt;:4533
-                        </li>
-                        <li>
-                            <p>Update:</p> dietpi-software reinstall 204
-                        </li>
-                        <li>
-                            <p>Music path:</p> /mnt/dietpi_userdata/Music
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>FreshRSS</h4>
-                        </li>
-                        <li>
-                            <p>Connect:</p> http://&lt;SERVER-IP&gt;/freshrss
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Omada Controller</h4>
-                        </li>
-                    </ul>
-                </div>
+      </div>
+      <div id="info-odroid1" class="hidden info-box">
+        <h1>Name: Odroid 1</h1>
+        <h2>IP: 202</h2>
+        <h2>OS: DietPi</h2>
 
-            </div>
-            <div id="info-pi2" class="hidden info-box">
-                <h1>Name: Pi 2</h1>
-                <h2>IP: 203</h2>
-                <h2>OS: DietPi</h2>
-
-                <h3>Services:</h3>
-
-                <div class="service-items">
-                    <ul>
-                        <li>
-                            <h4>Pi-Hole</h4>
-                        </li>
-                        <li>
-                            <p>Connect:</p> http://&lt;SERVER-IP&gt;/admin/
-                        </li>
-                        <li>
-                            <p>Update:</p> pihole -up
-                        </li>
-                        <li>
-                            <p>Changing password:</p> pihole -a -p
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Unbound</h4>
-                        </li>
-
-                        <li>
-                            <p>Update:</p> sudo apt update && sudo apt upgrade
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-            <div id="info-odroid1" class="hidden info-box">
-                <h1>Name: Odroid 1</h1>
-                <h2>IP: 202</h2>
-                <h2>OS: DietPi</h2>
-
-                <h3>Services:</h3>
-
-                <div class="service-items">
-                    <ul>
-                        <li>
-                            <h4>qBittorrent</h4>
-                        </li>
-                        <li>
-                            <p>Connect:</p> http://&lt;SERVER-IP&gt;:1340
-                        </li>
-                        <li>
-                            <p>Downloads path:</p> /mnt/dietpi_userdata/downloads
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h4>Dietpi VPN</h4>
-                        </li>
-                        <li>
-                            <p>Command:</p> dietpi-vpn
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
+        <h3>Services:</h3>
+        <div class="service-items">
+          <ul>
+            <li>
+              <h4>qBittorrent</h4>
+            </li>
+            <li>
+              <p>Connect:</p>
+              http://&lt;SERVER-IP&gt;:1340
+            </li>
+            <li>
+              <p>Downloads path:</p>
+              /mnt/dietpi_userdata/downloads
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h4>Dietpi VPN</h4>
+            </li>
+            <li>
+              <p>Command:</p>
+              dietpi-vpn
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
